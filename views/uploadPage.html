@@ -1,0 +1,137 @@
+<html>
+   <head>
+       
+      <link rel="stylesheet" href="/css/style.css"/>
+      <link  rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"/>
+      <title>File Upload</title>
+      
+      
+
+   </head>
+    <body>
+        
+          
+        <div class="displayOptions login--signup">
+
+
+            <div class="">
+                <main class="login-form" style="margin:20px;">
+                    <h2 class="heading-secondary ma-bt-lg">FILE UPLOAD</h2>
+                    <form class="form form--upload">
+                        <div class="form__group required">
+                            <label class="form__label" for="uploadedFile">File Upload</label>
+                            <input class="form__input" accept='csv' type='file', id="uploadedFile" name="uploadedFile"/>
+        
+                        </div>
+                       
+                        <div class="form__group">
+        
+                            <button type ="submit" class="btn form-upload-btn btn--green">Upload</button>
+        
+                        </div>
+                          
+        
+        
+                    </form>
+        
+        
+                </main>
+        
+        
+        
+               
+        
+    
+            </div>
+            <div>
+                <main class="login-form" style="margin:20px;">
+
+                    <form class="form form-displayData" >
+                        <div class="form__label">
+                          <h2 class="heading-secondary ma-bt-lg">Display Joined Table Data</h2>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="hashnum">Search with #HashNum</label>
+                            <input class="form__input" type='text', id="hashnum" placeholder='1,2,3..' />
+                            <span style="color: orange; font-size: medium;">Default hashnum is 10 if field is empty</span>
+        
+                        </div>
+                        <div class="form__group">
+            
+                            <button type ="submit" class="btn displayData-btn btn--green">Display Data</button>
+            
+                        </div>
+        
+                    </form>
+                </main>
+               
+               
+            </div>
+        
+
+
+
+        </div>
+        <div class="loader"> 
+            <svg> 
+                    <use href="images/icons.svg#icon-cw"></use> 
+             </svg>
+             </div>
+
+        <div class="table-data">
+
+
+        </div>
+        <div class="form__group back-btn">
+            
+           <a href="/home"><button  class="btn btn--green">Back Home</button></a>
+
+        </div>
+        <div class="form__group charts-btn">
+            
+            <a href="/charts"><button  class="btn btn--green">Data Analysis</button></a>
+ 
+         </div>
+        <!-- <div class="display-table">
+            <table style="width:200%; margin-top: 40px;">
+                <tr>
+                  <th>Hshd_Num</th>
+                  <th>Basket_Num</th> 
+                  <th>Date</th>
+                  <th>Product_Num</th>
+                  <th>Department</th> 
+                  <th>Commodity</th>
+                  <th>Spend</th>
+                  <th>Units</th> 
+                  <th>Store_region</th>
+                  <th>Week_num</th>
+                  <th>Year</th> 
+                  <th>Loyality Flag</th>
+                  <th>Age_Range</th>
+                  <th>Marital_status</th>
+                  <th>Income_range</th> 
+                  <th>Home_owner_desc</th>
+                  <th>Hshd_composition</th>
+                  <th>Hshd_size</th> 
+                  <th>children</th>
+                </tr>
+                <tr class="table-rows">
+                  
+                </tr>
+              </table>
+
+        </div> -->
+        
+                  
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js'></script>
+        <script src="/js/uploadPage.js"></script>
+
+        
+    </body>
+
+
+
+</html>
+
+
+
