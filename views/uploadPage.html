@@ -21,6 +21,7 @@
                         <div class="form__group required">
                             <label class="form__label" for="uploadedFile">File Upload</label>
                             <input class="form__input" accept='csv' type='file', id="uploadedFile" name="uploadedFile"/>
+                            <span style="color: orange; font-size: medium;">FileName should contain "transaction", "product" or "household" !</span>
         
                         </div>
                        
@@ -29,13 +30,22 @@
                             <button type ="submit" class="btn form-upload-btn btn--green">Upload</button>
         
                         </div>
+
                           
         
         
                     </form>
+
+                 
         
         
                 </main>
+                <div class="loader"> 
+                    <svg> 
+                            <use href="images/icons.svg#icon-cw"></use> 
+                     </svg>
+                     <span class="loader-text" style="color: orange; font-size: medium;"></span>
+                </div>
         
         
         
@@ -61,8 +71,15 @@
                             <button type ="submit" class="btn displayData-btn btn--green">Display Data</button>
             
                         </div>
+                     
         
                     </form>
+                    <div class="form__group charts-btn">
+            
+                        <a href="/charts"><button  class="btn btn--green">Data Analysis</button></a>
+                        <span style="color: orange; font-size: medium;">Click for charts and graphs</span>
+             
+                     </div>
                 </main>
                
                
@@ -72,11 +89,11 @@
 
 
         </div>
-        <div class="loader"> 
+        <!-- <div class="loader"> 
             <svg> 
                     <use href="images/icons.svg#icon-cw"></use> 
              </svg>
-             </div>
+        </div> -->
 
         <div class="table-data">
 
@@ -87,11 +104,11 @@
            <a href="/home"><button  class="btn btn--green">Back Home</button></a>
 
         </div>
-        <div class="form__group charts-btn">
+        <!-- <div class="form__group charts-btn">
             
             <a href="/charts"><button  class="btn btn--green">Data Analysis</button></a>
  
-         </div>
+         </div> -->
         <!-- <div class="display-table">
             <table style="width:200%; margin-top: 40px;">
                 <tr>

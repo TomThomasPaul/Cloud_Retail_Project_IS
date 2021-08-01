@@ -8,6 +8,8 @@ const displayDataForm =document.querySelector('.form-displayData');
 const displayOptions =document.querySelector('.displayOptions');
 const backButton =document.querySelector('.back-btn');
 const goToCharts =document.querySelector('.charts-btn');
+const loaderText =document.querySelector('.loader-text');
+
 
 
 
@@ -81,7 +83,7 @@ const displayData = async (hashnum)=>{
 
                 dataTable.innerHTML = result.data.data;
                 backButton.style.display = "block";
-                goToCharts.style.display="block";
+                //goToCharts.style.display="block";
             }
 
     }catch(err){
@@ -112,6 +114,7 @@ if(uploadForm){
         console.log(document.getElementById('uploadedFile').files[0]);
 
       loader.style.display = "block";
+      loaderText.textContent = "Please Wait...Uploading to MongoDb.."
       uploadFile(form);
         console.log("clicked file upload");
     })
@@ -138,7 +141,9 @@ if(displayDataForm){
         let hashnum =document.getElementById('hashnum').value;
         console.log(hashnum);
        // displayTable.style.display = 'block';
+       //goToCharts.style.display="none";
        loader.style.display = "block";
+       loaderText.textContent = "Please Wait...Querying MongoDb..."
        displayData(hashnum);
         
     })
